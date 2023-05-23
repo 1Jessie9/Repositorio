@@ -3,42 +3,42 @@ import { ICardSkill } from "src/app/shared/interfaces/card-skill.interface";
 export const CARDS_SKILLS: ICardSkill[] = [
     {
         title: "HTML",
-        img: "./../../assets/img/html.svg"
+        img: "https://1jessie9.github.io/repositorio/assets/img/html.svg"
     },
     {
         title: "CSS",
-        img: "./../../assets/img/css.svg"
+        img: "https://1jessie9.github.io/repositorio/assets/img/css.svg"
     },
     {
         title: "JavaScript",
-        img: "./../../assets/img/javascript.svg"
+        img: "https://1jessie9.github.io/repositorio/assets/img/javascript.svg"
     },
     {
         title: "TypeScript",
-        img: "./../../assets/img/typescript.svg"
+        img: "https://1jessie9.github.io/repositorio/assets/img/typescript.svg"
     },
     {
         title: "Angular",
-        img: "./../../assets/img/angular.png"
+        img: "https://1jessie9.github.io/repositorio/assets/img/angular.png"
     },
     {
         title: "Ionic framework",
-        img: "./../../assets/img/ionic.png"
+        img: "https://1jessie9.github.io/repositorio/assets/img/ionic.png"
     },
     {
         title: "React",
-        img: "./../../assets/img/react.png"
+        img: "https://1jessie9.github.io/repositorio/assets/img/react.png"
     },
     {
         title: "PHP",
-        img: "./../../assets/img/php.png"
+        img: "https://1jessie9.github.io/repositorio/assets/img/php.png"
     },
     {
         title: "Laravel",
-        img: "./../../assets/img/laravel.png"
+        img: "https://1jessie9.github.io/repositorio/assets/img/laravel.png"
     },
     {
         title: "MySql",
-        img: "./../../assets/img/mysql.svg"
+        img: "https://1jessie9.github.io/repositorio/assets/img/mysql.svg"
     },
 ];
