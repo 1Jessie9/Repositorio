@@ -1,0 +1,19 @@
+<div class="contain-contact">
+    <div class="card-contactme">
+        <img class="img-contact" src="../../assets/img/yess-phone.jpeg" alt="contactme" width="50px" height="40px">
+        <h1 class="title">Contáctame</h1>
+
+        <div class="contain-text">
+            <div class="contact-info" *ngFor="let contact of contacts">
+                <div class="contain-img">
+                    <img [src]="contact.img" [alt]="contact.altImg" width="30px" height="30px">
+                </div>
+
+                <div class="info">
+                    <h6>{{contact.title}}</h6>
+                    <a [href]="contact.link">Redirigir a mi {{contact.title}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

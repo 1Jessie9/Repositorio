@@ -1,0 +1,165 @@
+.contain-projects {
+    background-color: var(--color-primary);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    padding: 50px 0;
+
+    .center {
+        text-align: center;
+    }
+
+    .title {
+        color: var(--color-white);
+        display: grid;
+        font-size: 40px;
+        font-weight: 800;
+        margin: 0;
+        line-height: 50px;
+
+        @media screen and (max-width: 640px) {
+            font-size: 30px;
+        }
+
+        .projects {
+            font-size: 60px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: var(--color-white);
+
+            @media screen and (max-width: 640px) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .contain-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1024px;
+        justify-content: center;
+        margin-top: 2em;
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+
+        .card-projects {
+            width: calc(25% - 20px);
+            background-color: var(--color-white);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+
+            &:hover {
+                box-shadow: 0 8px 10px rgb(0 0 0 / 15%);
+                -moz-transform: translate3d(0, -3px, 0);
+                -o-transform: translate3d(0, -3px, 0);
+                -ms-transform: translate3d(0, -3px, 0);
+                -webkit-transform: translate3d(0, -3px, 0);
+                transform: translate3d(0, -3px, 0);
+                transition: 0.3s;
+            }
+
+            @media screen and (max-width: 1024px) {
+                width: calc(40% - 20px);
+                margin-bottom: 20px;
+                padding: 15px;
+            }
+
+            img {
+                border-radius: 10px;
+            }
+
+            h6 {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0;
+                margin-top: 10px;
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    .contain-swipers {
+        max-width: 55em;
+        margin-top: 2em;
+        position: relative;
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 90vw;
+            margin: auto;
+            margin-top: 2em;
+            display: block;
+        }
+
+        .shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset -90px 0px 30px -30px var(--color-primary), inset 90px 0px 30px -30px var(--color-primary);
+            z-index: 2;
+            pointer-events: none;
+
+            @media screen and (max-width: 640px) {
+                box-shadow: inset -60px 0px 30px -30px var(--color-primary), inset 60px 0px 30px -30px var(--color-primary);
+            }
+        }
+
+        .card-projects {
+            background-color: var(--color-white);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin: 15px 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+            max-width: 20em;
+
+            &:hover {
+                box-shadow: 0 8px 10px rgb(0 0 0 / 15%);
+                -moz-transform: translate3d(0, -3px, 0);
+                -o-transform: translate3d(0, -3px, 0);
+                -ms-transform: translate3d(0, -3px, 0);
+                -webkit-transform: translate3d(0, -3px, 0);
+                transform: translate3d(0, -3px, 0);
+                transition: 0.3s;
+            }
+
+            img {
+                border-radius: 10px;
+            }
+
+            h6 {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0;
+                margin-top: 10px;
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+}

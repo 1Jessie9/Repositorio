@@ -1,0 +1,36 @@
+<div class="contain-projects">
+    <div class="center">
+        <h1 class="title">
+            <label>Mis</label>
+            <label class="projects">Proyectos</label>
+        </h1>
+
+        <div class="contain-cards">
+            <div class="card-projects" *ngFor="let project of projects">
+                <img [src]="project.img" [alt]="project.title" width="160px" height="100px">
+                <h6>{{project.title}}</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laborum minus sapiente architecto
+                    quo quidem, quis esse.</p>
+            </div>
+        </div>
+
+        <div class="contain-swipers">
+            <div class="shadow"></div>
+            <section class="contain-swiper">
+                <swiper-container #swiper (afterinit)="swiperReady()" loop="true"
+                    autoplay-disable-on-interaction="false" autoplay-delay="10000" slides-per-view="auto" speed="3000">
+                    <swiper-slide *ngFor="let project of projects">
+                        <div class="card-projects">
+                            <div class="center">
+                                <img [src]="project.img" [alt]="project.title" width="100px" height="80px">
+                                <h6>{{project.title}}</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laborum minus
+                                    sapiente architecto quo quidem, quis esse.</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </section>
+        </div>
+    </div>
+</div>

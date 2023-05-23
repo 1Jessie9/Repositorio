@@ -1,0 +1,25 @@
+<div class="contain-skills">
+    <div class="center">
+        <h1 class="title">
+            <label>Mis</label>
+            <label class="skills">Habilidades</label>
+        </h1>
+
+        <div class="contain-swipers">
+            <div class="shadow"></div>
+            <section class="contain-swiper">
+                <swiper-container #swiper (afterinit)="swiperReady()" loop="true"
+                    autoplay-disable-on-interaction="false" autoplay-delay="1000" slides-per-view="auto" speed="1500">
+                    <swiper-slide *ngFor="let skill of skills">
+                        <div class="card">
+                            <div class="center">
+                                <img [src]="skill.img" [alt]="skill.title" width="60px" height="60px">
+                                <h6>{{skill.title}}</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </section>
+        </div>
+    </div>
+</div>
